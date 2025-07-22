@@ -1,0 +1,25 @@
+:root {
+  /* Primary */
+  --pink-400: hsl(0, 36%, 70%);
+  --red-500: hsl(0, 93%, 68%);
+  /* Neutral */
+  --gray-900: hsl(0, 6%, 24%);
+  /* Gradients */
+  --gradient-primary: 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%);
+  --gradient-secondary: 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%);
+}
+@import url("https://fonts.google.com/specimen/Josefin+Sans");
+
+body {
+  font-size: 16px;
+  font-family: "Josefin Sans", sans serif;
+  /* font-weight: 600; */
+  /* - Weights: 300, 400, 600 */
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
