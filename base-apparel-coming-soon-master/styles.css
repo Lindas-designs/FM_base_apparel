@@ -17,27 +17,35 @@
     hsl(0, 74%, 74%)
   );
 }
-@import url("https://fonts.google.com/specimen/Josefin+Sans");
-
+html {
+  font-family: "Josefin Sans", sans serif;
+  /* font-weight: 600; */
+  /* - Weights: 300, 400, 600 */
+}
 html,
 body {
   margin: 0;
 }
 body {
   font-size: 16px;
-  font-family: "Josefin Sans", sans serif;
   position: fixed;
-
-  /* font-weight: 600; */
-  /* - Weights: 300, 400, 600 */
 }
 .main {
   display: flex;
   height: 100vh;
   background-image: var(--gradient-primary);
 }
-
-img {
+.info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10vw;
+  margin-right: 15vw;
+  margin-top: 2vw;
+}
+.logo-img {
+  width: 10rem;
+}
+.hero-img {
   height: 100%;
   width: fit-content;
 }

@@ -4,17 +4,19 @@ This is a solution to the [Base Apparel coming soon page challenge on Frontend M
 
 ## Table of contents
 
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
+- [Frontend Mentor - Base Apparel coming soon page solution](#frontend-mentor---base-apparel-coming-soon-page-solution)
+  - [Table of contents](#table-of-contents)
+  - [Overview](#overview)
+    - [The challenge](#the-challenge)
+    - [Screenshot](#screenshot)
+    - [Links](#links)
+  - [My process](#my-process)
+    - [Built with](#built-with)
+    - [What I learned](#what-i-learned)
+    - [Continued development](#continued-development)
+    - [Useful resources](#useful-resources)
+  - [Author](#author)
+  - [Acknowledgments](#acknowledgments)
 
 **Note: Delete this note and update the table of contents based on what sections you keep.**
 
@@ -64,14 +66,40 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### What I learned
 
+Creating input forms
+
+```html
+<form class="email_form">
+  <input type="email" placeholder="Email Address" />
+  <button class="btn"></button>
+</form>
+```
+
 Defining colors in css:
+
+```css
 :root {
---pink-400: hsl(0, 36%, 70%);
---gradient-primary: linear-gradient(
-135deg,
-hsl(0, 0%, 100%),
-hsl(0, 100%, 98%)
-);}
+  --pink-400: hsl(0, 36%, 70%);
+  --gradient-primary: linear-gradient(
+    135deg,
+    hsl(0, 0%, 100%),
+    hsl(0, 100%, 98%)
+  );
+}
+/* Applying colors */
+.main {
+  background-image: var(--gradient-primary);
+}
+/* To set image to full height of the parent element, use */
+img {
+  height: 100%;
+  width: fit-content;
+}
+/* Size of parent element must be defined then! */
+.main {
+  height: 100vh;
+}
+```
 
 Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
 
@@ -98,6 +126,10 @@ If you want more help with writing markdown, we'd recommend checking out [The Ma
 **Note: Delete this note and the content within this section and replace with your own learnings.**
 
 ### Continued development
+
+Need to learn more about image positioning!
+
+<!--  -->
 
 Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
 
