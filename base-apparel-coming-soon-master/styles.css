@@ -5,17 +5,43 @@
   /* Neutral */
   --gray-900: hsl(0, 6%, 24%);
   /* Gradients */
-  --gradient-primary: 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%);
-  --gradient-secondary: 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%);
+  --gradient-primary: linear-gradient(
+    135deg,
+    hsl(0, 0%, 100%),
+    hsl(0, 100%, 98%)
+  );
+
+  --gradient-secondary: linear-gradient(
+    135deg,
+    hsl(0, 80%, 86%),
+    hsl(0, 74%, 74%)
+  );
 }
 @import url("https://fonts.google.com/specimen/Josefin+Sans");
 
+html,
+body {
+  margin: 0;
+}
 body {
   font-size: 16px;
   font-family: "Josefin Sans", sans serif;
+  position: fixed;
+
   /* font-weight: 600; */
   /* - Weights: 300, 400, 600 */
 }
+.main {
+  display: flex;
+  height: 100vh;
+  background-image: var(--gradient-primary);
+}
+
+img {
+  height: 100%;
+  width: fit-content;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
