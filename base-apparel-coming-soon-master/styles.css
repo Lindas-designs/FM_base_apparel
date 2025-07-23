@@ -93,6 +93,18 @@ p {
   font-weight: 300;
   font-family: "Josefin Sans";
 }
+.error-img {
+  position: absolute;
+  left: 60%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.hidden {
+  opacity: 0;
+}
+.error-message {
+  display: block;
+}
 
 .btn {
   position: absolute;
