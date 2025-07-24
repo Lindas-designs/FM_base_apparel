@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 :root {
   /* Primary */
   --pink-400: hsl(0, 36%, 70%);
@@ -43,11 +46,9 @@ body {
 .info {
   display: flex;
   flex-direction: column;
+  margin-right: 10vw;
+  margin-top: 3vh;
   margin-left: 10vw;
-  margin-right: 25vw;
-  margin-top: 3vw;
-
-  /* max-width: 60%; */
 }
 .logo-img {
   width: 10rem;
@@ -59,6 +60,7 @@ h1 {
   color: var(--gray-900);
   font-size: 4rem;
   letter-spacing: 1rem;
+  max-width: fit-content;
 }
 .highlight {
   color: var(--pink-400);
